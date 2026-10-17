@@ -27,6 +27,10 @@ C-programming-codes/
 │   ├── concat_strings_#8.c
 │   ├── reading_writing_file_#9.c
 │   └── reading_writing_binary_file_#10.c
+├── LEVEL-2-CODES/               # Intermediate & applied C programs
+│   ├── #1_String_pattern_matching.c
+│   ├── #2_movie_sorting.c
+│   └── #3_search_movie.c
 ├── .gitignore                   # Ignore binary executables & object files
 └── README.md
 ```
@@ -47,6 +51,16 @@ C-programming-codes/
 | **8** | [`concat_strings_#8.c`](LEVEL-1-CODES/concat_strings_%238.c) | Pointer Manipulation | Pointer-based string concatenation and buffer management. |
 | **9** | [`reading_writing_file_#9.c`](LEVEL-1-CODES/reading_writing_file_%239.c) | Text File I/O | Reads and writes formatted records using `fopen`, `fprintf`, and `fscanf`. |
 | **10** | [`reading_writing_binary_file_#10.c`](LEVEL-1-CODES/reading_writing_binary_file_%2310.c) | Binary File I/O | Serializes and deserializes structured binary data using `fread` and `fwrite`. |
+
+---
+
+## Level 2 Codes Overview
+
+| # | Program | Key Concept | Description |
+|---|---|---|---|
+| **1** | [`#1_String_pattern_matching.c`](LEVEL-2-CODES/%231_String_pattern_matching.c) | Pattern Matching & Replacement | Scans an input string for a target sub-pattern and replaces all occurrences with custom replacement text without library shortcuts. |
+| **2** | [`#2_movie_sorting.c`](LEVEL-2-CODES/%232_movie_sorting.c) | Dynamic Struct Array & CSV Sorting | Dynamically allocates an array of `Movie` structs, parses an IMDb CSV file, sorts records by rating and year, writes output, and frees heap memory. |
+| **3** | [`#3_search_movie.c`](LEVEL-2-CODES/%233_search_movie.c) | Structured File Parsing & Linear Search | Parses comma-separated values using `sscanf` formatting `[%99[^,],...]`, performs linear searches for movie titles, and manages memory. |
 
 ---
 

@@ -15,10 +15,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Verify compilation of all Level 1 C programs
+    - name: Verify compilation of all Level 1 and Level 2 C programs
       run: |
-        for file in LEVEL-1-CODES/*.c; do
+        for file in LEVEL-1-CODES/*.c LEVEL-2-CODES/*.c; do
           echo "Compiling $file..."
           gcc -fsyntax-only "$file"
         done
-        echo "All C programs compiled successfully with zero syntax errors!"
+        echo "All Level 1 and Level 2 C programs compiled successfully with zero syntax errors!"
