@@ -1,0 +1,25 @@
+# Compiled Binaries
+*.exe
+*.out
+*.app
+
+# Object files & Libraries
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# Build Artifacts
+build/
+bin/
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS metadata
+.DS_Store
+Thumbs.db

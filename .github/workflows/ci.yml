@@ -1,0 +1,24 @@
+name: C Compilation CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verify:
+    name: Verify C Programs (GCC)
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Verify compilation of all Level 1 C programs
+      run: |
+        for file in LEVEL-1-CODES/*.c; do
+          echo "Compiling $file..."
+          gcc -fsyntax-only "$file"
+        done
+        echo "All C programs compiled successfully with zero syntax errors!"
